@@ -7,11 +7,12 @@ import paho.mqtt.client as mqtt
 # create a client object
 client=mqtt.Client()
 
-# connect with broker
-client.connect('broker.hivemq.com',1883)
-print ('Broker Connected')
+
 
 while True:
+  # connect with broker
+  client.connect('broker.hivemq.com',1883)
+  print ('Broker Connected')
   print('Enter on to switch on the device')
   print('Enter off to switch off the device')
   k=input('Enter choice: ')
